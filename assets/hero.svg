@@ -1,1 +1,896 @@
+<svg
+  width="1200"
+  height="520"
+  viewBox="0 0 1200 520"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
 
+  <defs>
+
+    <!-- MAIN BACKGROUND -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/>
+      <stop offset="0.45" stop-color="#071126"/>
+      <stop offset="1" stop-color="#140B2E"/>
+    </linearGradient>
+
+    <!-- NEON GRADIENT -->
+    <linearGradient id="neon" x1="0" y1="0" x2="1200" y2="0">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="0.45" stop-color="#38BDF8"/>
+      <stop offset="0.72" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#C084FC">
+
+        <animate
+          attributeName="stop-color"
+          values="#C084FC;#00E5FF;#7C3AED;#C084FC"
+          dur="6s"
+          repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- CYAN -->
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+
+    <!-- PURPLE -->
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+
+    <!-- GRID -->
+    <pattern
+      id="grid"
+      width="40"
+      height="40"
+      patternUnits="userSpaceOnUse">
+
+      <path
+        d="M40 0H0V40"
+        stroke="#1E293B"
+        stroke-width="1"
+        opacity="0.55"/>
+
+    </pattern>
+
+    <!-- SMALL GRID -->
+    <pattern
+      id="microGrid"
+      width="10"
+      height="10"
+      patternUnits="userSpaceOnUse">
+
+      <path
+        d="M10 0H0V10"
+        stroke="#0F172A"
+        stroke-width="0.8"
+        opacity="0.5"/>
+
+    </pattern>
+
+    <!-- GLOW -->
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <!-- SCAN MASK -->
+    <linearGradient id="scanGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="white" stop-opacity="1"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <mask id="scanMask">
+      <rect width="1200" height="520" fill="url(#scanGradient)"/>
+    </mask>
+
+  </defs>
+
+  <!-- =============================== -->
+  <!-- BACKGROUND -->
+  <!-- =============================== -->
+
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="520"
+    rx="30"
+    fill="url(#bg)"/>
+
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="520"
+    rx="30"
+    fill="url(#grid)"
+    opacity="0.85"/>
+
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="520"
+    rx="30"
+    fill="url(#microGrid)"
+    opacity="0.22"/>
+
+  <!-- =============================== -->
+  <!-- AMBIENT LIGHT -->
+  <!-- =============================== -->
+
+  <circle
+    cx="150"
+    cy="130"
+    r="120"
+    fill="#06B6D4"
+    opacity="0.10"
+    filter="url(#softGlow)">
+
+    <animate
+      attributeName="r"
+      values="100;135;100"
+      dur="5s"
+      repeatCount="indefinite"/>
+
+    <animate
+      attributeName="opacity"
+      values="0.06;0.13;0.06"
+      dur="5s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+  <circle
+    cx="1020"
+    cy="390"
+    r="130"
+    fill="#7C3AED"
+    opacity="0.10"
+    filter="url(#softGlow)">
+
+    <animate
+      attributeName="r"
+      values="110;145;110"
+      dur="6s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+  <!-- =============================== -->
+  <!-- OUTER FRAME -->
+  <!-- =============================== -->
+
+  <rect
+    x="2"
+    y="2"
+    width="1196"
+    height="516"
+    rx="30"
+    stroke="url(#neon)"
+    stroke-width="3"
+    filter="url(#glow)">
+
+    <animate
+      attributeName="opacity"
+      values="0.72;1;0.72"
+      dur="3.5s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+  <rect
+    x="14"
+    y="14"
+    width="1172"
+    height="492"
+    rx="24"
+    stroke="#1E293B"
+    stroke-width="1"/>
+
+  <!-- =============================== -->
+  <!-- TOP SYSTEM BAR -->
+  <!-- =============================== -->
+
+  <text
+    x="40"
+    y="48"
+    fill="#22D3EE"
+    font-size="13"
+    font-family="monospace"
+    letter-spacing="3">
+
+    ● SYSTEM ONLINE
+
+    <animate
+      attributeName="opacity"
+      values="1;0.45;1"
+      dur="1.8s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+  <text
+    x="1120"
+    y="48"
+    text-anchor="end"
+    fill="#64748B"
+    font-size="11"
+    font-family="monospace"
+    letter-spacing="2">
+
+    NODE://SKTH-AI-01
+
+  </text>
+
+  <!-- =============================== -->
+  <!-- LEFT TERMINAL -->
+  <!-- =============================== -->
+
+  <rect
+    x="38"
+    y="88"
+    width="245"
+    height="270"
+    rx="16"
+    fill="#020617"
+    stroke="#1E293B"
+    stroke-width="1.5"/>
+
+  <rect
+    x="38"
+    y="88"
+    width="245"
+    height="36"
+    rx="16"
+    fill="#0B1226"/>
+
+  <circle cx="58" cy="106" r="5" fill="#EF4444"/>
+  <circle cx="75" cy="106" r="5" fill="#F59E0B"/>
+  <circle cx="92" cy="106" r="5" fill="#22C55E"/>
+
+  <text
+    x="115"
+    y="111"
+    fill="#64748B"
+    font-size="10"
+    font-family="monospace">
+
+    ai_terminal
+
+  </text>
+
+  <text
+    x="58"
+    y="154"
+    fill="#22D3EE"
+    font-size="11"
+    font-family="monospace">
+
+    $ whoami
+
+  </text>
+
+  <text
+    x="58"
+    y="178"
+    fill="#E2E8F0"
+    font-size="12"
+    font-family="monospace">
+
+    sakthivel_r
+
+  </text>
+
+  <text
+    x="58"
+    y="214"
+    fill="#22D3EE"
+    font-size="11"
+    font-family="monospace">
+
+    $ focus
+
+  </text>
+
+  <text
+    x="58"
+    y="238"
+    fill="#94A3B8"
+    font-size="11"
+    font-family="monospace">
+
+    AI / ML
+
+  </text>
+
+  <text
+    x="58"
+    y="258"
+    fill="#94A3B8"
+    font-size="11"
+    font-family="monospace">
+
+    Graph Intelligence
+
+  </text>
+
+  <text
+    x="58"
+    y="278"
+    fill="#94A3B8"
+    font-size="11"
+    font-family="monospace">
+
+    Cyber AI
+
+  </text>
+
+  <text
+    x="58"
+    y="298"
+    fill="#94A3B8"
+    font-size="11"
+    font-family="monospace">
+
+    Healthcare AI
+
+  </text>
+
+  <text
+    x="58"
+    y="330"
+    fill="#8B5CF6"
+    font-size="11"
+    font-family="monospace">
+
+    $ build --future
+
+  </text>
+
+  <rect
+    x="180"
+    y="321"
+    width="8"
+    height="15"
+    fill="#22D3EE">
+
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="0.8s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+  <!-- =============================== -->
+  <!-- CENTER IDENTITY -->
+  <!-- =============================== -->
+
+  <text
+    x="600"
+    y="145"
+    text-anchor="middle"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="4">
+
+    ARTIFICIAL INTELLIGENCE // SOFTWARE // DESIGN
+
+  </text>
+
+  <text
+    x="600"
+    y="202"
+    text-anchor="middle"
+    fill="white"
+    font-family="monospace"
+    font-size="54"
+    font-weight="700"
+    letter-spacing="8">
+
+    SAKTHIVEL R
+
+    <animate
+      attributeName="opacity"
+      values="0.88;1;0.88"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+  <text
+    x="600"
+    y="236"
+    text-anchor="middle"
+    fill="#22D3EE"
+    font-family="monospace"
+    font-size="17"
+    font-weight="600"
+    letter-spacing="5">
+
+    AI ENGINEER IN PROGRESS
+
+  </text>
+
+  <!-- glowing separator -->
+  <line
+    x1="380"
+    y1="257"
+    x2="820"
+    y2="257"
+    stroke="url(#neon)"
+    stroke-width="2"
+    opacity="0.85"/>
+
+  <!-- =============================== -->
+  <!-- AI CORE -->
+  <!-- =============================== -->
+
+  <g transform="translate(600 385)">
+
+    <!-- Outer rotating ring -->
+    <g>
+
+      <ellipse
+        rx="110"
+        ry="34"
+        stroke="#22D3EE"
+        stroke-width="1"
+        opacity="0.45"/>
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="8s"
+        repeatCount="indefinite"/>
+
+    </g>
+
+    <!-- second ring -->
+    <g transform="rotate(60)">
+
+      <ellipse
+        rx="110"
+        ry="34"
+        stroke="#8B5CF6"
+        stroke-width="1"
+        opacity="0.35"/>
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="60"
+        to="420"
+        dur="11s"
+        repeatCount="indefinite"/>
+
+    </g>
+
+    <!-- third ring -->
+    <g transform="rotate(-55)">
+
+      <ellipse
+        rx="78"
+        ry="25"
+        stroke="#38BDF8"
+        stroke-width="1"
+        opacity="0.3"/>
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="-55"
+        to="305"
+        dur="6s"
+        repeatCount="indefinite"/>
+
+    </g>
+
+    <!-- CORE -->
+    <circle
+      r="18"
+      fill="#06111F"
+      stroke="#22D3EE"
+      stroke-width="3"
+      filter="url(#glow)">
+
+      <animate
+        attributeName="r"
+        values="15;22;15"
+        dur="2.4s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+    <circle
+      r="7"
+      fill="#22D3EE"
+      filter="url(#glow)">
+
+      <animate
+        attributeName="opacity"
+        values="0.55;1;0.55"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+    <!-- ORBIT NODE 1 -->
+    <circle
+      cx="110"
+      cy="0"
+      r="5"
+      fill="#22D3EE"
+      filter="url(#glow)">
+
+      <animateMotion
+        dur="5s"
+        repeatCount="indefinite"
+        path="M0,0 C80,-40 140,40 110,0 C90,-25 60,30 0,0"/>
+
+    </circle>
+
+    <!-- ORBIT NODE 2 -->
+    <circle
+      cx="-85"
+      cy="0"
+      r="4"
+      fill="#A78BFA"
+      filter="url(#glow)">
+
+      <animateMotion
+        dur="7s"
+        repeatCount="indefinite"
+        path="M0,0 C-70,40 -120,-40 -85,0 C-65,25 -30,-25 0,0"/>
+
+    </circle>
+
+  </g>
+
+  <!-- =============================== -->
+  <!-- RIGHT TELEMETRY PANEL -->
+  <!-- =============================== -->
+
+  <rect
+    x="918"
+    y="88"
+    width="244"
+    height="270"
+    rx="16"
+    fill="#020617"
+    stroke="#1E293B"
+    stroke-width="1.5"/>
+
+  <text
+    x="940"
+    y="116"
+    fill="#22D3EE"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="2">
+
+    LIVE TELEMETRY
+
+  </text>
+
+  <text
+    x="940"
+    y="151"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10">
+
+    AI SYSTEM
+
+  </text>
+
+  <rect
+    x="940"
+    y="164"
+    width="190"
+    height="8"
+    rx="4"
+    fill="#0F172A"/>
+
+  <rect
+    x="940"
+    y="164"
+    width="146"
+    height="8"
+    rx="4"
+    fill="url(#cyan)">
+
+    <animate
+      attributeName="width"
+      values="120;165;145;180;146"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+  <text
+    x="940"
+    y="198"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10">
+
+    GRAPH INTELLIGENCE
+
+  </text>
+
+  <rect
+    x="940"
+    y="211"
+    width="190"
+    height="8"
+    rx="4"
+    fill="#0F172A"/>
+
+  <rect
+    x="940"
+    y="211"
+    width="112"
+    height="8"
+    rx="4"
+    fill="url(#purple)">
+
+    <animate
+      attributeName="width"
+      values="90;130;115;145;112"
+      dur="3.7s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+  <text
+    x="940"
+    y="245"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="10">
+
+    SOFTWARE ENGINEERING
+
+  </text>
+
+  <rect
+    x="940"
+    y="258"
+    width="190"
+    height="8"
+    rx="4"
+    fill="#0F172A"/>
+
+  <rect
+    x="940"
+    y="258"
+    width="158"
+    height="8"
+    rx="4"
+    fill="url(#neon)">
+
+    <animate
+      attributeName="width"
+      values="140;170;155;180;158"
+      dur="4.2s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+  <!-- status chips -->
+  <circle
+    cx="944"
+    cy="304"
+    r="5"
+    fill="#22C55E">
+
+    <animate
+      attributeName="opacity"
+      values="1;0.35;1"
+      dur="1.5s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+  <text
+    x="958"
+    y="308"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="10">
+
+    API SYSTEMS // READY
+
+  </text>
+
+  <circle
+    cx="944"
+    cy="329"
+    r="5"
+    fill="#22D3EE">
+
+    <animate
+      attributeName="opacity"
+      values="1;0.35;1"
+      dur="1.8s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+  <text
+    x="958"
+    y="333"
+    fill="#94A3B8"
+    font-family="monospace"
+    font-size="10">
+
+    RESEARCH NODE // ACTIVE
+
+  </text>
+
+  <!-- =============================== -->
+  <!-- PARTICLES -->
+  <!-- =============================== -->
+
+  <g fill="#22D3EE">
+
+    <circle cx="320" cy="105" r="2">
+
+      <animate
+        attributeName="cy"
+        values="105;82;105"
+        dur="3s"
+        repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="3s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+    <circle cx="850" cy="150" r="2">
+
+      <animate
+        attributeName="cy"
+        values="150;175;150"
+        dur="4s"
+        repeatCount="indefinite"/>
+
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
+        dur="4s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+    <circle cx="305" cy="430" r="2">
+
+      <animate
+        attributeName="cx"
+        values="305;340;305"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+    <circle cx="875" cy="420" r="2">
+
+      <animate
+        attributeName="cx"
+        values="875;840;875"
+        dur="3.2s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+  </g>
+
+  <!-- =============================== -->
+  <!-- MOVING SCAN LINE -->
+  <!-- =============================== -->
+
+  <rect
+    x="-200"
+    y="0"
+    width="200"
+    height="520"
+    fill="url(#scanGradient)"
+    opacity="0.08"
+    mask="url(#scanMask)">
+
+    <animate
+      attributeName="x"
+      from="-250"
+      to="1250"
+      dur="7s"
+      repeatCount="indefinite"/>
+
+  </rect>
+
+  <!-- =============================== -->
+  <!-- BOTTOM TICKER -->
+  <!-- =============================== -->
+
+  <line
+    x1="38"
+    y1="392"
+    x2="1162"
+    y2="392"
+    stroke="#1E293B"
+    stroke-width="1"/>
+
+  <text
+    x="1160"
+    y="427"
+    fill="#64748B"
+    font-family="monospace"
+    font-size="11"
+    letter-spacing="2">
+
+    BUILD  •  RESEARCH  •  EXPERIMENT  •  DEPLOY  •  INNOVATE  •  BUILD  •  RESEARCH
+
+    <animate
+      attributeName="x"
+      from="1160"
+      to="-900"
+      dur="18s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+  <!-- =============================== -->
+  <!-- FOOT STATUS -->
+  <!-- =============================== -->
+
+  <text
+    x="40"
+    y="478"
+    fill="#334155"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="2">
+
+    SAKTHIVEL // AI SOFTWARE ENGINEERING // 2026
+
+  </text>
+
+  <text
+    x="1160"
+    y="478"
+    text-anchor="end"
+    fill="#22D3EE"
+    font-family="monospace"
+    font-size="10"
+    letter-spacing="2">
+
+    STATUS: BUILDING
+
+    <animate
+      attributeName="opacity"
+      values="1;0.5;1"
+      dur="2s"
+      repeatCount="indefinite"/>
+
+  </text>
+
+</svg>
