@@ -6,7 +6,7 @@
 ### AI & DATA SCIENCE DEVELOPER
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=850&lines=Building+Intelligent+Systems;AI+%7C+Machine+Learning+%7C+Deep+Learning;Graph+Learning+%7C+Cybersecurity+%7C+Healthcare+AI;Full-Stack+Developer+%7C+Problem+Solver;Turning+Ideas+Into+Real-World+Products"/>
-
+<img src="https://raw.githubusercontent.com/sakthi2006-creater/sakthi2006-creater/main/assets/hero.svg" width="100%" />
 <br>
 
 <a href="https://sakthivelportfolio.online/">
