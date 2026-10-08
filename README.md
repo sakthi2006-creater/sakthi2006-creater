@@ -1,16 +1,42 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**sakthi2006-creater/sakthi2006-creater** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:0F172A,100:2563EB&text=SAKTHIVEL%20R&fontColor=FFFFFF&fontSize=52&fontAlignY=38&desc=AI%20%26%20DATA%20SCIENCE%20DEVELOPER&descAlignY=60&descSize=19&animation=fadeIn"/>
 
-Here are some ideas to get you started:
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=850&lines=Building+Intelligent+Systems;Exploring+AI+%7C+ML+%7C+Deep+Learning;Graph+Learning+%7C+Cybersecurity+%7C+Healthcare+AI;Full-Stack+Developer+%7C+Problem+Solver;Turning+Ideas+Into+Real-World+Products"/>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br/>
+
+<a href="https://sakthivelportfolio.online/">
+  <img src="https://img.shields.io/badge/PORTFOLIO-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white"/>
+</a>
+
+<a href="https://github.com/sakthi2006-creater">
+  <img src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/">
+  <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=sakthi2006-creater&label=PROFILE%20VIEWS&color=2563EB&style=for-the-badge"/>
+
+</div>
+
+---
+
+# ⚡ WHO AM I?
+
+```text
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│  SAKTHIVEL R                                            │
+│                                                         │
+│  AI & Data Science Developer                            │
+│                                                         │
+│  I build intelligent systems that connect              │
+│  AI research, software engineering and                  │
+│  real-world problem solving.                            │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
